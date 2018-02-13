@@ -1,0 +1,410 @@
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+div {
+  float: left;
+  margin: 20px;
+}
+
+.flags {
+  /* width: 400px; 180
+  height: 220px; 120
+  border:  1px solid #ccc; */
+  width: $flagwidth;
+  height: $flagheight;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.mexico {
+  border-left: $flagwidth/3 solid #006847;
+  border-right: $flagwidth/3 solid #CE1126;
+  width: $flagwidth/3;
+  background: url(../img/mexico.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+}
+
+.germany {
+  border-top: $flagheight/3 solid black;
+  border-bottom: $flagheight/3 solid red;
+  height: $flagheight/3;
+  background-color: $gold;
+}
+
+.uae {
+  background: linear-gradient(to right, #FF0000 30%, transparent 0), linear-gradient(to bottom, #00732F calc(100% / 3), white calc(100% / 3), white calc(100% / 3 * 2), black calc(100% / 3 * 2));
+}
+
+.congo {
+  background: linear-gradient(137deg, $congogreen 40%, $congogyellow 40%, $congogyellow 60%, $congored 60%);
+}
+
+.czech {
+  background: linear-gradient(140deg, $czechblue 20%, transparent 15%) 0 $flagheight/2, linear-gradient(40deg, $czechblue 20%, transparent 15%) 0 $flagheight/2, linear-gradient(to bottom, white 50%, $czechred 50%);
+  background-size: $flagwidth $flagheight;
+}
+
+.denmark {
+  background: linear-gradient(to bottom, transparent 40%, white 40%, white 55%, transparent 55%), linear-gradient(to right, transparent 24%, white 24%, white 34%, transparent 34%), $denmarkcolor;
+}
+
+.switzerland {
+  background: linear-gradient(to bottom, transparent 33%, white 33%, white 66%, transparent 66%),linear-gradient(to right, transparent 33%, white 33%, white 66%, transparent 66%), #FF0000;
+  background-size: 230px 210px;
+  background-repeat: no-repeat;
+  background-position: 85px 17px;
+}
+
+.cameroon {
+  border-left: $flagwidth/3 solid #007A5E;
+  border-right: $flagwidth/3 solid #FCD116;
+  background-color: #CE1126;
+  width: $flagwidth/3;
+  &:after {
+    content: "★";
+    color: yellow;
+    font-size: 50px;
+    position: relative;
+    top: 35%;
+    left: 30%;
+  }
+}
+
+.chile {
+  background: linear-gradient(to bottom, white, white 50%, #D52B1E 50%);
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "★";
+    box-sizing: border-box;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    background: #0039A6;
+    height: $flagheight/2;
+    width: $flagheight/2;
+    padding-top: 10px;
+  }
+}
+
+.turkey {
+  background: red;
+  &:after {
+    width: 20px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    padding-left: 125px;
+    padding-top: 40px;
+    margin-left: 85px;
+    margin-top: 53px;
+    content: "★";
+    font-size: 76px;
+    color: white;
+    transform: rotate(-18deg);
+		}
+		&:before {
+			background: white;
+			border-radius: 50%;
+			width: 180px;
+			height: 180px;
+			position: absolute;
+      margin-left: 45px;
+      margin-top: 35px;
+			// top: 100px;
+			// left: 112px;
+			display: block;
+			content: "";
+		}
+}
+
+.bahrain {
+  background: linear-gradient(90deg, white, white 25%, #CE1126 25%, #CE1126 100%);
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    width: $flagwidth/9;
+    height: 100%;
+    background: linear-gradient(154deg, white 32%, transparent 31%) 0 $flagwidth/18, linear-gradient(24deg, white 32%, transparent 31%) 0 $flagwidth/18;
+    background-size: $flagwidth/9 $flagwidth/9;
+    left: $flagwidth/4;
+    top: 0;
+  }
+}
+
+
+.vietnam {
+  background: #DA251D;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "★";
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto;
+    text-align: center;
+    color: #FFFF00;
+    font-size: 154px;
+    top: 14px;
+  }
+
+}
+
+.syria {
+  background: linear-gradient(to bottom, #CE1126 33%, white 33%, white 66%, black 66%);
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "★      ★";
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #007A3D;
+    font-size: 66px;
+    top: 75px;
+    white-space: pre;
+  }
+}
+
+.s-sudan {
+  background: linear-gradient(137deg, #0F47AF 20%, transparent 0) 0 $flagheight/2, linear-gradient(43deg, #0F47AF 20%, transparent 0) 0 $flagheight/2, linear-gradient(to bottom, black 30%, white 30%, white 35%, #DA121A 35%, #DA121A 65%, white 65%, white 70%, #078930 70%);
+  position: relative;
+  &:before{
+    position: absolute;
+    content: "★";
+    color: #FCDD09;
+    font-size: 60px;
+    top: 77px;
+    left: 32px;
+    transform: rotate(45deg);
+  }
+}
+
+.saint-k-a-n {
+  background: linear-gradient(145deg, #009E49 35%, #FCD116 35%, #FCD116 40%, black 40%, black 60%, #FCD116 60%, #FCD116 65%, #CE1126 65%);
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "★";
+    color: white;
+    font-size: 60px;
+    transform: rotate(42deg);
+    right: 95px;
+    top: 36px;
+  }
+  &:after {
+    position: absolute;
+    content: "★";
+    color: white;
+    font-size: 60px;
+    transform: rotate(42deg);
+    left: 95px;
+    bottom: 36px;
+  }
+}
+
+.saint-l {
+  background: linear-gradient(-45deg, #FCD116 14%, transparent 0) -$flagwidth/2 -20px, linear-gradient(45deg, #FCD116 14%, transparent 0) $flagwidth/2 -20px, linear-gradient(-65deg, black 16%, transparent 0) -$flagwidth/2 -20px, linear-gradient(65deg, black 16%, transparent 0) $flagwidth/2 -20px, linear-gradient(-65deg, white 18%, transparent 0) -$flagwidth/2 -20px, linear-gradient(65deg, white 18%, transparent 0) $flagwidth/2 -20px, #66CCFF;
+}
+
+.azerbijan {
+  background: linear-gradient(180deg, #00b5e2, #00b5e2 calc(100% / 3), #ef3340 calc(100% / 3), #ef3340 calc(100% / 3 * 2), #509e2f calc(100% / 3 * 2), #509e2f 100%);
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto;
+    background: transparent;
+    width: $flagwidth/6;
+    height: $flagwidth/6;
+    top: 90px;
+    left: -6px;
+    box-shadow: -8px 0 0 6px white;
+  }
+  &:after {
+    position: absolute;
+    content: "✸";
+    color: white;
+    font-size: 35px;
+    transform: rotate(22deg);
+    top: 105px;
+    left: 52%;
+  }
+}
+
+.malaysia {
+  background: repeating-linear-gradient(to bottom, $malaysiared, $malaysiared 7.14%, white 7.14%, white 14.28%);
+  &:before{
+    position: absolute;
+    content: "✹";
+    box-sizing: border-box;
+    color: $malaysiayellow;
+    font-size: 70px;
+    text-align: center;
+    background: $malaysiablue;
+    height: .571 * $flagheight;
+    width: $flagwidth/2;
+    padding-top: 30px;
+    padding-left: 40px;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    margin-left: 60px;
+    // margin-left: auto;
+    // right: 0;
+    // margin-right: auto;
+    background: transparent;
+    width: $flagwidth/6;
+    height: $flagwidth/6;
+    margin-top: 35px;
+    // left: -6px;
+    box-shadow: -10px 0 0 7px $malaysiayellow;
+  }
+}
+
+.brazil {
+  background: linear-gradient(149deg, #009B3A 30%, transparent 25%), linear-gradient(-149deg, #009B3A 30%, transparent 25%), linear-gradient(-30deg, #009B3A 30%, transparent 25%), linear-gradient(30deg, #009B3A 30%, transparent 25%), radial-gradient(170px at 50% 50%, transparent 0, transparent 35%, #FEDF00 35%, #FEDF00 100%), radial-gradient(180px at 45% 78%, transparent 0, transparent 45%, white 45%, white 52%, transparent 52%, transparent 100%), #002776;
+  overflow: hidden;
+}
+
+.british {
+  background: #00247D;
+  background-size: $flagwidth $flagheight;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background:
+    linear-gradient(to bottom, transparent 40%, #CC142B 40%, #CC142B 60%, transparent 60%),
+    linear-gradient(to right, transparent 45%, #CC142B 45%, #CC142B 55%, transparent 55%),
+    linear-gradient(to bottom, transparent 35%, white 35%, white 65%, transparent 65%),
+    linear-gradient(to right, transparent 40%, white 40%, white 60%, transparent 60%),
+    linear-gradient(146deg, transparent 50%, #CC142B 50%, #CC142B 53%, transparent 53%) -145px 95px,
+    linear-gradient(146deg, transparent 50%, #CC142B 50%, #CC142B 53%, transparent 53%) 120px -95px,
+    linear-gradient(34deg, transparent 50%, #CC142B 50%, #CC142B 53%, transparent 53%) -165px -95px,
+    linear-gradient(34deg, transparent 50%, #CC142B 50%, #CC142B 53%, transparent 53%) 140px 95px,
+    linear-gradient(146deg, transparent 45%, white 45%, white 55%, transparent 55%), linear-gradient(34deg, transparent 45%, white 45%, white 55%, transparent 55%);
+    width: $flagwidth;
+    height: $flagheight;
+    background-repeat: no-repeat;
+
+  //
+  }
+}
+
+.nepal {
+  background: radial-gradient(85px at 13% 32%, #DC1038 0, #DC143C 35%, transparent 35%, transparent 100%), radial-gradient(90px at 13% 36%, white 0, white 35%, transparent 35%, transparent 100%), linear-gradient(47deg, #DC143C 27%, transparent 27%) 8px -8px, linear-gradient(33deg, #DC143C 22%, transparent 22%) 8px -121px, linear-gradient(47deg, #003893 32%, transparent 29%), linear-gradient(33deg, #003893 27%, transparent 25%) 0px -112px;
+  background-size: $flagwidth $flagheight;
+  position: relative;
+  &:before{
+    position: absolute;
+    content: "✹";
+    color: white;
+    font-size: 98px;
+    bottom: 10px;
+    left: 15px;
+  }
+  &:after{
+    position: absolute;
+    content: "✹";
+    color: white;
+    font-size: 58px;
+    top: 68px;
+    left: 29px;
+  }
+}
+
+.israel {
+  background: linear-gradient(to bottom, transparent 15%, #0038B8 15%, #0038B8 30%, transparent 30%, transparent 70%, #0038B8 70%, #0038B8 85%, transparent 85%), white;
+  position: relative;
+  &:before{
+    position: absolute;
+    content: "✡";
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto;
+    text-align: center;
+    top: 25%;
+    font-size: 110px;
+    font-weight: bold;
+    color: #0038B8;
+  }
+}
+
+.tunisia {
+  background: radial-gradient(100px at 54% 50%, white 35%, transparent 0), radial-gradient(150px at 50% 50%, transparent 30%, white 30%, white 40%, transparent 0), #E70013;
+  position: relative;
+  &:before{
+    position: absolute;
+    content: "★";
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto;
+    font-size: 60px;
+    color: #E70013;
+    text-align: center;
+    top: 82px;
+    left: 37px;
+    transform: rotate(45deg);
+  }
+}
+
+.us {
+   background: repeating-linear-gradient(to bottom, $usred, $usred 7.7%, white 7.7%, white 15.4%);
+   &:before{
+     position: absolute;
+     content: "";
+     box-sizing: border-box;
+     text-align: center;
+     background: $usblue;
+     height: .539 * $flagheight;
+     width: $flagwidth/2;
+   }
+   &:after{
+      content: "★";
+    	font-size: 14px;
+    	color: #f3f3f3;
+    	position: absolute;
+    	margin-left: 5px;
+    	text-shadow: 35px 0 0 #f3f3f3, 70px 0 0 #f3f3f3, 105px 0 0 #f3f3f3, 140px 0 0 #f3f3f3, 175px 0 0 #f3f3f3, 17px 14px 0 #f3f3f3, 52px 14px 0 #f3f3f3,   87px 14px 0 #f3f3f3,  122px 14px 0 #f3f3f3, 157px 14px 0 #f3f3f3, 0 28px 0 #f3f3f3, 35px 28px 0 #f3f3f3, 70px 28px 0 #f3f3f3, 105px 28px 0 #f3f3f3, 140px 28px 0 #f3f3f3, 175px 28px 0 #f3f3f3, 17px 42px 0 #f3f3f3, 52px 42px 0 #f3f3f3,   87px 42px 0 #f3f3f3,  122px 42px 0 #f3f3f3, 157px 42px 0 #f3f3f3, 0 56px 0 #f3f3f3, 35px 56px 0 #f3f3f3, 70px 56px 0 #f3f3f3, 105px 56px 0 #f3f3f3, 140px 56px 0 #f3f3f3, 175px 56px 0 #f3f3f3,    17px 70px 0 #f3f3f3, 52px 70px 0 #f3f3f3,   87px 70px 0 #f3f3f3,  122px 70px 0 #f3f3f3, 157px 70px 0 #f3f3f3, 0 84px 0 #f3f3f3, 35px 84px 0 #f3f3f3, 70px 84px 0 #f3f3f3, 105px 84px 0 #f3f3f3, 140px 84px 0 #f3f3f3, 175px 84px 0 #f3f3f3, 17px 98px 0 #f3f3f3, 52px 98px 0 #f3f3f3,   87px 98px 0 #f3f3f3,  122px 98px 0 #f3f3f3, 157px 98px 0 #f3f3f3, 0 112px 0 #f3f3f3, 35px 112px 0 #f3f3f3, 70px 112px 0 #f3f3f3, 105px 112px 0 #f3f3f3, 140px 112px 0 #f3f3f3, 175px 112px 0 #f3f3f3;
+   }
+}
+
+.chinese {
+  background: rgb(205,60,37);
+  &:before {
+    content: "★";
+    position: absolute;
+    color: yellow;
+    font-size: 70px;
+    padding-left: 20px;
+  }
+  &:after {
+    content: "★";
+    position: absolute;
+    color: yellow;
+    font-size: 23px;
+    margin-left: 110px;
+    padding-top: 10px;
+    transform: rotate(30deg);
+    text-shadow: 30px 10px, 45px 40px, 40px 75px;
+  }
+
+}

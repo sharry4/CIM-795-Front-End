@@ -1,0 +1,12 @@
+.example {
+  background: yellow;
+}
+
+.example::after {
+  content: "world";
+  background: green;
+  display: inline-block;
+  width: 100px;
+  margin-left: 30px;
+  border-radius: 4px;
+}

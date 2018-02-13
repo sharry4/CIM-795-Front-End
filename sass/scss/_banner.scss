@@ -1,0 +1,11 @@
+.hello {
+  color: $orange;
+  border: $number+px solid $green;
+  a {
+    color: rgba($green,0.5);
+    color: greyscal(50%);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

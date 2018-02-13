@@ -1,0 +1,70 @@
+Last login: Thu Feb  1 14:14:35 on ttys000
+Sharrys-MacBook-Pro:~ sharrytong$ sudo gem install sass
+Password:
+Fetching: rb-fsevent-0.10.2.gem (100%)
+Successfully installed rb-fsevent-0.10.2
+Fetching: ffi-1.9.18.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed ffi-1.9.18
+Fetching: rb-inotify-0.9.10.gem (100%)
+Successfully installed rb-inotify-0.9.10
+Fetching: sass-listen-4.0.0.gem (100%)
+Successfully installed sass-listen-4.0.0
+Fetching: sass-3.5.5.gem (100%)
+Successfully installed sass-3.5.5
+Parsing documentation for rb-fsevent-0.10.2
+Installing ri documentation for rb-fsevent-0.10.2
+Parsing documentation for ffi-1.9.18
+Installing ri documentation for ffi-1.9.18
+Parsing documentation for rb-inotify-0.9.10
+Installing ri documentation for rb-inotify-0.9.10
+Parsing documentation for sass-listen-4.0.0
+Installing ri documentation for sass-listen-4.0.0
+Parsing documentation for sass-3.5.5
+Installing ri documentation for sass-3.5.5
+5 gems installed
+Sharrys-MacBook-Pro:~ sharrytong$ sass -v
+Sass 3.5.5 (Bleeding Edge)
+Sharrys-MacBook-Pro:~ sharrytong$ cd ~/D
+Desktop/   Documents/ Downloads/ 
+Sharrys-MacBook-Pro:~ sharrytong$ cd ~/D
+Desktop/   Documents/ Downloads/ 
+Sharrys-MacBook-Pro:~ sharrytong$ cd ~/Documents/
+Sharrys-MacBook-Pro:Documents sharrytong$ cd GitHub/CIM-795-Front-End/sass
+Sharrys-MacBook-Pro:sass sharrytong$ sass --watch scss:css
+>>> Sass is watching for changes. Press Ctrl-C to stop.
+      write css/master.css
+      write css/master.css.map
+>>> Change detected to: scss/master.scss
+      write css/master.css
+      write css/master.css.map
+>>> New template detected: scss/_banner.scss
+>>> Change detected to: scss/_banner.scss
+>>> Change detected to: scss/_banner.scss
+>>> Change detected to: scss/_banner.scss
+>>> Change detected to: scss/_banner.scss
+>>> Change detected to: scss/master.scss
+      write css/master.css
+      write css/master.css.map
+>>> New template detected: scss/_vars.scss
+>>> Change detected to: scss/master.scss
+      write css/master.css
+      write css/master.css.map
+>>> Change detected to: scss/master.scss
+      write css/master.css
+      write css/master.css.map
+>>> Change detected to: scss/_vars.scss
+      write css/master.css
+      write css/master.css.map
+>>> Change detected to: scss/_banner.scss
+      error scss/_banner.scss (Line 2: Undefined variable: "$organge".)
+>>> Change detected to: scss/_banner.scss
+      error scss/_banner.scss (Line 2: Undefined variable: "$orange".)
+>>> Change detected to: scss/_banner.scss
+      error scss/_banner.scss (Line 2: Undefined variable: "$orange".)
+>>> Change detected to: scss/_vars.scss
+      error scss/_banner.scss (Line 2: Undefined variable: "$orange".)
+>>> Change detected to: scss/master.scss
+      write css/master.css
+      write css/master.css.map
+

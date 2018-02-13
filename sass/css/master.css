@@ -1,0 +1,19 @@
+.container {
+  background: yellow; }
+  @media only screen and (min-width: 320px) {
+    .container {
+      background: blue; } }
+  @media only screen and (min-width: 768px) {
+    .container {
+      background: green; } }
+
+.hello {
+  color: #ffcc00;
+  border: 6px solid #006847; }
+  .hello a {
+    color: rgba(0, 104, 71, 0.5);
+    color: greyscal(50%); }
+    .hello a:hover {
+      text-decoration: underline; }
+
+/*# sourceMappingURL=master.css.map */

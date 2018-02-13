@@ -1,0 +1,18 @@
+@mixin media($width){
+  @media only screen and (min-width:$width){
+    @content;
+  }
+
+}
+
+
+.container {
+  background: yellow;
+  @include media(320px){
+    background: blue;
+  }
+  @include media(768px){
+    background: green;
+  }
+
+}
