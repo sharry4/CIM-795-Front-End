@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Transitions</title>
+  <link rel="stylesheet" href="css/master.css">
+  <style media="screen">
+    .slider {
+      /* animation-name: slidein;
+      animation-duration: 3s;
+      animation-delay: 3s;
+      animation-iteration-count: 3;
+      animation-direction: alternate;
+      animation-timing-function: ease-in; */
+
+
+      animation: slidein 3s linear infinite alternate;
+
+      /* animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction*/
+
+    }
+
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 200%;
+      }
+
+      to {
+        margin-left: 100px;
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box slider">
+    I am a box
+  </div>
+
+
+</body>
+
+</html>

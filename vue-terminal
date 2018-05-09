@@ -1,0 +1,73 @@
+Last login: Tue Apr 17 12:06:26 on console
+Sharrys-MacBook-Pro:~ sharrytong$ node -v
+v8.9.4
+Sharrys-MacBook-Pro:~ sharrytong$ npm -v
+5.6.0
+
+Sharrys-MacBook-Pro:~ sharrytong$ cd /Users/sharrytong/Documents/GitHub/CIM-795-Front-End 
+
+Sharrys-MacBook-Pro:CIM-795-Front-End sharrytong$ mkdir vue-demo
+
+
+Sharrys-MacBook-Pro:CIM-795-Front-End sharrytong$ cd vue-demo/
+
+
+Sharrys-MacBook-Pro:vue-demo sharrytong$ npm init -y
+Wrote to /Users/sharrytong/Documents/GitHub/CIM-795-Front-End/vue-demo/package.json:
+
+{
+  "name": "vue-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+Sharrys-MacBook-Pro:vue-demo sharrytong$ npm install vue --save
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN vue-demo@1.0.0 No description
+npm WARN vue-demo@1.0.0 No repository field.
+
++ vue@2.5.16
+added 1 package in 0.88s
+
+
+
+
+
+
+// update npm
+
+Sharrys-MacBook-Pro:vue-demo sharrytong$ sudo npm i -g npm
+Password:
+/usr/local/bin/npx -> /usr/local/lib/node_modules/npm/bin/npx-cli.js
+/usr/local/bin/npm -> /usr/local/lib/node_modules/npm/bin/npm-cli.js
++ npm@5.8.0
+added 89 packages, removed 42 packages and updated 67 packages in 8.536s
+
+Sharrys-MacBook-Pro:vue-demo sharrytong$ npm -v
+5.8.0
+
+
+
+
+
+
+Sharrys-MacBook-Pro:vue-demo sharrytong$ sudo npm install -g @vue/cli
+/usr/local/bin/vue -> /usr/local/lib/node_modules/@vue/cli/bin/vue.js
++ @vue/cli@3.0.0-beta.6
+added 365 packages from 228 contributors in 7.785s
+
+
+
+
+Sharrys-MacBook-Pro:vue-demo sharrytong$ vue -V
+
+ 

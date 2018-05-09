@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Transitions</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/master.css">
+    <style media="screen">
+    .trans {
+      background: #bada55;
+      font-size: 14px;
+      transition-property: background, width, font-size;
+      transition-duration: 2s, 2s, 2s;
+      /* cursor: pointer; */
+      transition-delay: 2.5s;
+      transition-timing-function: cubic-bezier(.04,.92,.97,.3);
+    }
+
+    .trans:hover {
+      font-size: 24px;
+      background: #f9a3f4;
+      width: 1120px;
+    }
+    </style>
+  </head>
+  <body>
+
+<h1 class="animated fadeIn">Headline!</h1>
+
+<div class="box trans">
+  I am a box
+</div>
+
+
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "Bower Demo",
+  "homepage": "https://github.com/sharry4/CIM-795-Front-End",
+  "authors": [
+    "sharry4 <sharrytong4@gmail.com>"
+  ],
+  "description": "Demo Project for CIM 795",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.0.0",
+    "d3": "^4.13.0"
+  }
+}

@@ -1,0 +1,94 @@
+Last login: Tue Feb 13 13:18:07 on ttys000
+Sharrys-MacBook-Pro:~ sharrytong$ sudo npm install -g bower
+Password:
+npm WARN deprecated bower@1.8.2: ...psst! Your project can stop working at any moment because its dependencies can change. Prevent this by migrating to Yarn: https://bower.io/blog/2017/how-to-migrate-away-from-bower/
+/usr/local/bin/bower -> /usr/local/lib/node_modules/bower/bin/bower
+/usr/local/lib
+└── bower@1.8.2 
+
+Sharrys-MacBook-Pro:~ sharrytong$ bower -v
+1.8.2
+Sharrys-MacBook-Pro:~ sharrytong$ node -v
+v8.9.4
+Sharrys-MacBook-Pro:~ sharrytong$ npm -v
+5.6.0
+Sharrys-MacBook-Pro:~ sharrytong$ 
+Sharrys-MacBook-Pro:~ sharrytong$ cd ~/Users/sharrytong/Documents/GitHub/CIM-795-Front-End/class-demo/bower 
+-bash: cd: /Users/sharrytong/Users/sharrytong/Documents/GitHub/CIM-795-Front-End/class-demo/bower: No such file or directory
+Sharrys-MacBook-Pro:~ sharrytong$ cd /Users/sharrytong/Documents/GitHub/CIM-795-Front-End/class-demo/bower 
+Sharrys-MacBook-Pro:bower sharrytong$ bower init
+? name Bower Demo
+? description Demo Project for CIM 795
+? main file 
+? keywords 
+? authors sharry4 <sharrytong4@gmail.com>
+? license MIT
+? homepage https://github.com/sharry4/CIM-795-Front-End
+? would you like to mark this package as private which prevents it from being accidentally published to the registry? No
+cidentally published to the registry? (y/N) n
+{identally published to the registry? (y/N) 
+  name: 'Bower Demo',
+  homepage: 'https://github.com/sharry4/CIM-795-Front-End',
+  authors: [
+    'sharry4 <sharrytong4@gmail.com>'
+  ],
+  description: 'Demo Project for CIM 795',
+  main: '',
+  license: 'MIT',
+  ignore: [
+    '**/.*',
+    'node_modules',
+    'bower_components',
+    'test',
+    'tests'
+  ]
+}
+
+? Looks good? Yes
+Sharrys-MacBook-Pro:bower sharrytong$ 
+Sharrys-MacBook-Pro:bower sharrytong$ 
+Sharrys-MacBook-Pro:bower sharrytong$ bower install jaquery
+bower invalid-meta  for:/Users/sharrytong/Documents/GitHub/CIM-795-Front-End/class-demo/bower/bower.json
+bower invalid-meta  The "name" is recommended to be lowercase, can contain digits, dots, dashes
+bower ENOTFOUND     Package jaquery not found
+Sharrys-MacBook-Pro:bower sharrytong$ bower install jquery
+bower invalid-meta  for:/Users/sharrytong/Documents/GitHub/CIM-795-Front-End/class-demo/bower/bower.json
+bower invalid-meta  The "name" is recommended to be lowercase, can contain digits, dots, dashes
+bower not-cached    https://github.com/jquery/jquery-dist.git#*
+bower resolve       https://github.com/jquery/jquery-dist.git#*
+bower download      https://github.com/jquery/jquery-dist/archive/3.3.1.tar.gz
+bower extract       jquery#* archive.tar.gz
+bower resolved      https://github.com/jquery/jquery-dist.git#3.3.1
+bower install       jquery#3.3.1
+
+jquery#3.3.1 bower_components/jquery
+Sharrys-MacBook-Pro:bower sharrytong$ bower install jquery --save
+bower invalid-meta  for:/Users/sharrytong/Documents/GitHub/CIM-795-Front-End/class-demo/bower/bower.json
+bower invalid-meta  The "name" is recommended to be lowercase, can contain digits, dots, dashes
+bower cached        https://github.com/jquery/jquery-dist.git#3.3.1
+bower validate      3.3.1 against https://github.com/jquery/jquery-dist.git#*
+Sharrys-MacBook-Pro:bower sharrytong$ bower install bootstrap --save
+bower invalid-meta  for:/Users/sharrytong/Documents/GitHub/CIM-795-Front-End/class-demo/bower/bower.json
+bower invalid-meta  The "name" is recommended to be lowercase, can contain digits, dots, dashes
+bower not-cached    https://github.com/twbs/bootstrap.git#*
+bower resolve       https://github.com/twbs/bootstrap.git#*
+bower download      https://github.com/twbs/bootstrap/archive/v4.0.0.tar.gz
+bower extract       bootstrap#* archive.tar.gz
+bower resolved      https://github.com/twbs/bootstrap.git#4.0.0
+bower install       bootstrap#4.0.0
+
+bootstrap#4.0.0 bower_components/bootstrap
+Sharrys-MacBook-Pro:bower sharrytong$ 
+Sharrys-MacBook-Pro:bower sharrytong$ 
+Sharrys-MacBook-Pro:bower sharrytong$ bower install d3 --save
+bower invalid-meta  for:/Users/sharrytong/Documents/GitHub/CIM-795-Front-End/class-demo/bower/bower.json
+bower invalid-meta  The "name" is recommended to be lowercase, can contain digits, dots, dashes
+bower not-cached    https://github.com/mbostock-bower/d3-bower.git#*
+bower resolve       https://github.com/mbostock-bower/d3-bower.git#*
+bower download      https://github.com/mbostock-bower/d3-bower/archive/v4.13.0.tar.gz
+bower extract       d3#* archive.tar.gz
+bower resolved      https://github.com/mbostock-bower/d3-bower.git#4.13.0
+bower install       d3#4.13.0
+
+d3#4.13.0 bower_components/d3
+Sharrys-MacBook-Pro:bower sharrytong$ 

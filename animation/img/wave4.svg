@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="752px" height="79px" viewBox="0 0 752 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>wave4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets" transform="translate(-11.000000, -833.000000)" stroke="#FF7E1C" stroke-width="13">
+            <g id="wave" transform="translate(11.000000, 645.000000)">
+                <g id="wave4" transform="translate(0.000000, 195.000000)">
+                    <path d="M0,0 C53.6847783,0 46.6761671,65 104.528913,65 C162.381659,65 153.673735,2.21158951e-15 212.794625,0 C271.915516,0 259.85969,65 325.202942,65 C390.546195,65 358.555139,1.33799509e-15 431,0"></path>
+                    <path d="M430,0 C470.303643,0 471.910377,65 539.638426,65 C607.366474,65 572.737137,2.74232899e-15 647.754683,0 C722.772228,0 684.083775,55.6153747 751,65"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

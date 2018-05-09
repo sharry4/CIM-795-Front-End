@@ -1,0 +1,11 @@
+.hello {
+  background: orange;
+  padding: 10px;
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .hello {
+    display: block;
+  }
+}

@@ -1,0 +1,191 @@
+/*
+.container {
+  position: absolute;
+} */
+
+.bird {
+  margin: 0 auto;
+  padding-top: 50px;
+ }
+
+.left {
+  /* width: 960px; */
+  margin-left: 300px;
+  animation: slideout2-fade 2s linear 2s  forwards;
+
+}
+
+.right {
+  margin-left: 70px;
+  animation: slideout3-fade 2s linear 2s forwards;
+
+}
+
+
+
+.wave {
+  margin: 0 auto;
+  width: 50%;
+  /* padding-top: 40px; */
+  /* width: 960px; */
+  margin-left: 300px;
+  /* position: relative; */
+
+}
+
+.wave2, .wave4 {
+
+  animation: slideout1-fade 2s linear 2s forwards;
+}
+
+.wave1, .wave3, .wave5 {
+
+  animation: slideout2-fade 2s linear 2s forwards;
+}
+
+
+
+.logo {
+  position: absolute;
+  /* margin-top: 50px; */
+  opacity: 0;
+  left: 430px;
+  animation: slidein1-fade 2s linear 4s forwards;
+
+
+}
+
+.word {
+  position: absolute;
+  opacity: 0;
+  left: 430px;
+  margin-top: 200px;
+  margin-left: 160px;
+  animation: slidein2-fade 2s linear 4s forwards;
+}
+
+p {
+  position: absolute;
+  opacity: 0;
+  left: 450px;
+  font-family: sans-serif;
+  margin-top: 250px;
+  color: #2e3e74;
+  animation: fadein 2s linear 4s forwards;
+
+}
+
+/* .box {
+  display: none;
+  margin-top: 20px;
+  background-color: #5D949A;
+  height: 40px;
+  width: 600px;
+  margin-left: 200px; */
+}
+
+/* .box {
+  width: 100px;
+  height: 100px;
+  border: 1px #666 dashed;
+  padding: 10px;
+  margin: 100px;
+} */
+
+.slider {
+  /* animation-name: slidein;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-timing-function: ease-in; */
+
+
+  animation: 5s slidein2 2s;
+
+  /* animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction*/
+
+}
+
+@keyframes slideout1-fade {
+  from {
+    margin-left: 300px;
+    opacity: 1;
+  }
+  to {
+    margin-left: 500px;
+    opacity: 0;
+  }
+}
+
+@keyframes slideout2-fade {
+  from {
+    margin-left: 300px;
+    opacity: 1;
+  }
+  to {
+    margin-left: 100px;
+    opacity: 0;
+  }
+}
+
+@keyframes slideout3-fade {
+  from {
+    margin-left: 70px;
+    opacity: 1;
+  }
+  to {
+    margin-left: 370px;
+    opacity: 0;
+  }
+}
+
+
+@keyframes slidein1-fade {
+  from {
+    left: 230px;
+    opacity: 0;
+  }
+  to {
+    left: 430px;
+    opacity: 1;
+  }
+}
+
+@keyframes slidein2-fade {
+  from {
+    left: 630px;
+    opacity: 0;
+  }
+  to {
+    left: 430px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+@keyframes slidein2 {
+  from {
+    /* margin-top: 20; */
+    margin-left: 0;
+    width: 100px;
+    display: inline;
+  }
+  to {
+    /* margin-top: 20; */
+    margin-left: 200px;
+    width: 600px;
+    display: inline;
+  }
+}
